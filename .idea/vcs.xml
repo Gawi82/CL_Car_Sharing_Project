@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../CodersLab/ONL_FER_W_29_Zaawansowany_HTML_i_CSS" vcs="Git" />
   </component>
 </project>
