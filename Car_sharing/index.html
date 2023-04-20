@@ -82,28 +82,28 @@
     <div class="container">
         <h2 class="page-service-title">SERVICE</h2>
         <div class="page-service-articles">
-            <article class="page-service-articles-1">
-                <img class=page-service-art-photo-1 src="./assets/mini1.png" alt="gear">
+            <article class="box page-service-articles-1">
+                <img class="page-service-art-photo-1" src="./assets/mini1.png" alt="gear">
                 <h3>LOREM IPSUM SIT DOLOR</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                 <a class="btn btn-page-service" href="#">READ MORE</a>
             </article>
 
-            <article class="page-service-articles-2">
+            <article class="box page-service-articles-2">
                 <img class=page-blog-art-photo-2 src="./assets/mini2.png" alt="gear-head">
                 <h3>LOREM IPSUM SIT DOLOR</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                 <a class="btn btn-page-service" href="#">READ MORE</a>
             </article>
 
-            <article class="page-service-articles-3">
+            <article class="box page-service-articles-3">
                 <img class=page-blog-art-photo-3 src="./assets/mini3.png" alt="wheel">
                 <h3>LOREM IPSUM SIT DOLOR</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                 <a class="btn btn-page-service" href="#">READ MORE</a>
             </article>
 
-            <article class="page-service-articles-4">
+            <article class="box page-service-articles-4">
                 <img class=page-blog-art-photo-3 src="./assets/mini4.png" alt="panel">
                 <h3>LOREM IPSUM SIT DOLOR</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
@@ -117,46 +117,51 @@
     <div class="container">
         <h2 class="page-contact-title">CONTACT</h2>
         <div class="page-contact-details">
-            <img class=page-contact-photo src="./assets/Form Photo.png" alt="cars">
-            <form>
-                <label class="text">
-                    <input type="text" placeholder="Type your name">
-                </label>
-                <label class="text">
-                    <input type="email" placeholder="Type your e-mail">
-                </label>
-                <label class="textarea">
-                    <input type="text" placeholder="Type your message">
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox">
-                    <span>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</span>
-                </label>
+            <img class="page-contact-photo" src="./assets/Form Photo.png" alt="cars">
+            <div class="page-contact-form">
+                <form class="page-contact-form-fill">
+                    <label class="text">
+                        <input type="text" placeholder="Type your name">
+                    </label>
+                    <label class="text">
+                        <input type="email" placeholder="Type your e-mail">
+                    </label>
+                    <label class="textarea">
+                        <input type="text" placeholder="Type your message">
+                    </label>
+                </form>
+                <form class=page-contact-form-check">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</span>
+                    </label>
+                </form>
                 <button class="btn">SEND</button>
-            </form>
+            </div>
         </div>
     </div>
 </section>
 
-<footer>
+<footer class="page-footer">
     <div class="container">
-        <a href="./index.html" class="page-logo page-logo-footer">
+        <div class="footer-logo">
             <img src="./assets/Logo Footer.svg" alt="CAR SHARING">
             <h4><span>CAR</span> SHARING</h4>
-        </a>
-        <ul class="footer-list-1">
-            <li><a href="#">HOME PAGE</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">SHARE REGULATION</a></li>
-
-        </ul>
-        <ul class="footer-list-2">
-            <li><a href="#">PRICE</a></li>
-            <li><a href="#">OUR FLEET</a></li>
-            <li><a href="#">OUR CLIENTS</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
+        </div>
+        <div class="footer-list-elements">
+            <ul class="footer-list-1">
+                <li><a href="#">HOME PAGE</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">SHARE REGULATION</a></li>
+            </ul>
+            <ul class="footer-list-2">
+                <li><a href="#">PRICE</a></li>
+                <li><a href="#">OUR FLEET</a></li>
+                <li><a href="#">OUR CLIENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
         <p class="copyright">Copyright @ Coders Lab</p>
     </div>
 </footer>

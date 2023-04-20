@@ -23,7 +23,8 @@ body {
 }
 .part-logo {
     display: flex;
-    margin-left: 141px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .page-header img {
@@ -56,11 +57,19 @@ body {
 .page-nav-list a:hover {
     background: #FFFFFF33;
 }
-/*jak zrobić żeby tło nachodziło na header?*/
+/*!*jak zrobić żeby tło nachodziło na header?*!*/
+
 .banner .container {
-    height: 807px;
     background-image: url("../assets/Image.png");
     background-repeat: no-repeat;
+}
+/*jak zrobić nakładkę?*/
+.banner::before {
+    content: "";
+    width: 1088px;
+    height: 100%;
+    background: #000000 0 0 no-repeat padding-box;
+    opacity: 0.3;
 }
 
 .banner-elements {
@@ -74,7 +83,7 @@ body {
 .banner-title {
     font: normal normal 900 90px/90px Nunito Sans;
     color: #FFFFFF;
-    text-shadow: 0px 3px 6px #00000040;
+    text-shadow: 0 3px 6px #00000040;
     opacity: 1;
 }
 
@@ -127,25 +136,25 @@ body {
 }
 
 .arrow {
-    background: transparent url('img/Icon Arrow Down.png') 0 0 no-repeat padding-box;
+    background: transparent url("../assets/Icon Arrow Down.svg") 0 0 no-repeat padding-box;
     opacity: 1;
 }
 
 .page-blog .container {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0 0 no-repeat padding-box;
     opacity: 1;
 }
 .page-blog-title {
-    font: normal normal bold 35px/47px Nunito Sans;
-    color: #000000;
-    opacity: 1;
-    padding-top: 82px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
-}
+     font: normal normal bold 35px/47px Nunito Sans;
+     color: #000000;
+     opacity: 1;
+     padding-top: 82px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-right: 10px;
+     padding-left: 10px;
+ }
 
 .page-blog-title::before,
 .page-blog-title::after {
@@ -157,12 +166,16 @@ body {
     box-shadow: 0 1px 6px #FF00004D;
     border-radius: 8px;
     opacity: 1;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .page-blog-articles {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 35px;
+    padding-bottom: 100px;
 }
 
 .page-blog-articles .box {
@@ -175,8 +188,7 @@ body {
 .page-blog-articles img {
     width: 352px;
     height: 234px;
-    padding: 35px 16px 16px 25px;
-    background: transparent url('img/photo1.png') 0 0 no-repeat padding-box;
+    background: transparent 0 0 no-repeat padding-box;
     opacity: 1;
 }
 .page-blog-articles h3 {
@@ -184,7 +196,8 @@ body {
     letter-spacing: 0;
     color: #6A6A6A;
     opacity: 1;
-    text-align: left
+    text-align: left;
+    padding-top: 25px
 
 }
 .page-blog-articles p {
@@ -192,6 +205,8 @@ body {
     letter-spacing: 0;
     color: #6A6A6A;
     opacity: 1;
+    padding-top: 15px;
+    padding-bottom: 26px;
 }
 
 .page-blog-articles a {
@@ -206,4 +221,248 @@ body {
     text-decoration: none;
     padding: 11px 29px;
 
+}
+.page-service .container {
+    background: #28272C 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+h2.page-service-title {
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 60px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.page-service-title::before,
+h2.page-service-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    opacity: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.page-service-articles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+.page-service-articles .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page-service-articles img {
+    width: 170px;
+    height: 170px;
+    background: transparent 0 0 no-repeat padding-box;
+    border-radius: 85px;
+    opacity: 1;
+
+}
+.page-service-articles h3 {
+    text-align: left;
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-top: 25px;
+}
+
+.page-service-articles p {
+    text-align: center;
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    opacity: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.page-service-articles a {
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border-radius: 40px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 11px 29px;
+}
+
+.page-contact .container {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.page-contact-title {
+    font: normal normal bold 35px/47px Nunito Sans;
+    color: #000000;
+    opacity: 1;
+    padding-top: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.page-contact-title::before,
+.page-contact-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    opacity: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.page-contact-details {
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-contact-photo {
+    width: 444px;
+    height: 316px;
+}
+.page-contact-form {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form.page-contact-form-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+}
+.page-contact-form-fill label {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.page-contact-form-fill label:hover {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.page-contact-form-fill input {
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    opacity: 1;
+    border: none;
+}
+
+.page-contact-form .page-contact-form-check span {
+    text-align: left;
+    font: normal normal 300 10px/14px Open Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    opacity: 1;
+    padding: 20px 0 0 20px;
+}
+
+button.btn {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: #FF0000;
+    padding: 11px 52px;
+}
+
+.page-footer .container {
+    background: #28272C 0 0 no-repeat padding-box;
+    opacity: 1;
+    margin-top: 65px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.footer-logo h4 {
+    text-align: left;
+    font: normal normal bold 25px/34px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.footer-logo h4 span {
+    color: #FF0000;
+}
+
+.footer-list-elements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 39px;
+
+
+}
+div.footer-list-elements a {
+    text-align: left;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    text-decoration: none;
+}
+div.footer-list-elements a:hover {
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: #FF0000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.page-footer .container p {
+    text-align: left;
+    font: normal normal 300 12px/16px Nunito Sans;
+    letter-spacing: 0;
+    color: #D1D1D1;
+    opacity: 1;
 }
